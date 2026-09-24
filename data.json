@@ -1,1 +1,18 @@
-[]
+[
+    {
+        "game": "KC vs LV",
+        "name": "Patrick Mahomes",
+        "prop": "player_pass_yds",
+        "line": 265.5,
+        "proj": 272.9,
+        "ev": 0.0753
+    },
+    {
+        "game": "KC vs LV",
+        "name": "Isiah Pacheco",
+        "prop": "player_rush_tds",
+        "line": 0.5,
+        "proj": 0.0,
+        "ev": -0.0621
+    }
+]

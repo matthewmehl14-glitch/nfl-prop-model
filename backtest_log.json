@@ -1,1 +1,13 @@
-[]
+[
+    {
+        "date": "2026-09-24",
+        "game": "KC vs LV",
+        "player": "Patrick Mahomes",
+        "prop": "player_pass_yds",
+        "line": 265.5,
+        "ev": 0.0753,
+        "bucket": "5-8%",
+        "status": "pending",
+        "pnl": 0
+    }
+]
