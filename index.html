@@ -1,43 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NFL Simulation Dashboard</title>
+    <title>NFL Simulation Engine</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
 </head>
-<body class="bg-gray-100 p-6">
+<body class="bg-[#1a1a1c] text-white p-6 font-sans">
     <div class="max-w-6xl mx-auto">
-        <h1 class="text-3xl font-bold mb-6 text-gray-800">NFL 10K Simulation Engine</h1>
+        <h1 class="text-3xl font-bold mb-6 text-gray-100">NFL 10K Simulation Engine</h1>
         
         <div class="flex space-x-4 mb-8">
             <button onclick="showTab('dashboard')" class="bg-blue-600 text-white px-5 py-2 rounded shadow hover:bg-blue-700">Live Player Cards</button>
-            <button onclick="showTab('backtest')" class="bg-gray-800 text-white px-5 py-2 rounded shadow hover:bg-gray-900">Backtest & Edge Buckets</button>
+            <button onclick="showTab('backtest')" class="bg-[#242730] text-gray-200 px-5 py-2 rounded shadow hover:bg-gray-800">Backtest & Edge Buckets</button>
         </div>
 
         <!-- DASHBOARD VIEW -->
         <div id="dashboard">
-            <select id="gameSelect" class="p-3 mb-6 rounded shadow border-gray-300 w-full md:w-1/3">
-                <option value="all">All Games</option>
-            </select>
+            <div class="bg-[#242730] p-1 rounded-md inline-block w-full md:w-1/2 mb-6 border border-gray-600">
+                <select id="gameSelect" class="bg-transparent text-white p-2 w-full outline-none cursor-pointer appearance-none">
+                    <option value="" disabled selected>Select a Game (Current Week)</option>
+                    <!-- Options injected via JS -->
+                </select>
+            </div>
             
-            <div id="playerGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+            <!-- Cards only show up when a game is selected -->
+            <div id="playerGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 hidden"></div>
+            
+            <div id="placeholderText" class="text-gray-400 mt-4">
+                Please select a game from the dropdown to view 10,000-simulation player cards.
+            </div>
         </div>
 
         <!-- BACKTEST VIEW -->
         <div id="backtest" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Edge Bucket Performance ($25 Flat)</h2>
-            <div class="bg-white rounded-lg shadow overflow-hidden">
+            <h2 class="text-2xl font-bold mb-4 text-gray-100">Edge Bucket Performance ($25 Flat)</h2>
+            <div class="bg-[#242730] rounded-lg shadow overflow-hidden border border-gray-700">
                 <table class="min-w-full text-left">
-                    <thead class="bg-gray-200">
+                    <thead class="bg-[#1e2028] border-b border-gray-700">
                         <tr>
-                            <th class="p-4 font-bold">Edge Bucket</th>
-                            <th class="p-4 font-bold">Total Bets</th>
-                            <th class="p-4 font-bold">Win Rate</th>
-                            <th class="p-4 font-bold">Total P&L</th>
+                            <th class="p-4 font-bold text-gray-300">Edge Bucket</th>
+                            <th class="p-4 font-bold text-gray-300">Total Bets</th>
+                            <th class="p-4 font-bold text-gray-300">Win Rate</th>
+                            <th class="p-4 font-bold text-gray-300">Total P&L</th>
                         </tr>
                     </thead>
-                    <tbody id="bucketTable"></tbody>
+                    <tbody id="bucketTable" class="divide-y divide-gray-700"></tbody>
                 </table>
             </div>
         </div>
@@ -50,42 +63,58 @@
             document.getElementById(tab).classList.remove('hidden');
         }
 
-        // Initialize Data
         Promise.all([
-            fetch('data.json').then(r => r.json()),
-            fetch('backtest_log.json').then(r => r.json())
+            fetch('data.json').then(r => r.json()).catch(() => []),
+            fetch('backtest_log.json').then(r => r.json()).catch(() => [])
         ]).then(([liveData, logData]) => {
             
-            // Build Dashboard
+            // 1. Populate the Dropdown with Real Games
             const games = [...new Set(liveData.map(item => item.game))];
             const select = document.getElementById('gameSelect');
-            games.forEach(game => select.innerHTML += `<option value="${game}">${game}</option>`);
+            games.forEach(game => select.innerHTML += `<option value="${game}" class="bg-gray-800">${game}</option>`);
 
-            function renderCards(filterGame) {
+            // 2. Handle Game Selection
+            select.addEventListener('change', (e) => {
                 const grid = document.getElementById('playerGrid');
+                const placeholder = document.getElementById('placeholderText');
+                
                 grid.innerHTML = ''; 
-                const filtered = filterGame === 'all' ? liveData : liveData.filter(d => d.game === filterGame);
+                grid.classList.remove('hidden');
+                placeholder.classList.add('hidden');
 
-                filtered.forEach(player => {
-                    const evClass = player.ev > 0.03 ? 'text-green-600 font-bold' : 'text-gray-600';
+                const selectedGame = e.target.value;
+                const filteredData = liveData.filter(d => d.game === selectedGame);
+
+                filteredData.forEach(player => {
+                    // Format the prop text cleanly
+                    const propText = player.prop.replace('player_', '').replace(/_/g, ' ');
+                    const evClass = player.ev > 0.03 ? 'text-green-500 font-bold' : 'text-gray-400';
+                    
                     grid.innerHTML += `
-                        <div class="bg-white rounded-lg shadow-md p-5 border-t-4 border-blue-600">
-                            <h2 class="text-xl font-bold">${player.name}</h2>
-                            <p class="text-sm text-gray-500 border-b pb-2 mb-3">${player.game}</p>
-                            <div class="flex justify-between items-center text-sm">
-                                <span class="font-semibold uppercase text-xs text-gray-500">${player.prop.replace('player_', '').replace(/_/g, ' ')}</span>
-                                <span>Line: ${player.line}</span>
-                                <span>Proj: ${player.proj}</span>
-                                <span class="${evClass}">EV: ${(player.ev * 100).toFixed(2)}%</span>
+                        <div class="bg-[#242730] rounded-lg shadow-md p-5 border-t-4 border-blue-600">
+                            <h2 class="text-xl font-bold text-gray-100">${player.name}</h2>
+                            <p class="text-sm text-gray-400 border-b border-gray-600 pb-2 mb-3 capitalize">${propText}</p>
+                            
+                            <div class="flex flex-col space-y-2 text-sm text-gray-200">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Current Line:</span>
+                                    <span class="font-semibold">${player.line}</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-400">Model Projection:</span>
+                                    <span class="font-semibold">${player.proj}</span>
+                                </div>
+                                <div class="flex justify-between border-t border-gray-700 pt-2 mt-2">
+                                    <span class="text-gray-400">Model Edge:</span>
+                                    <span class="${evClass}">${(player.ev * 100).toFixed(2)}%</span>
+                                </div>
                             </div>
                         </div>
                     `;
                 });
-            }
-            renderCards('all');
-            select.addEventListener('change', (e) => renderCards(e.target.value));
+            });
 
-            // Build Backtest Buckets
+            // 3. Build Backtest Buckets
             const graded = logData.filter(d => d.status === 'graded');
             const buckets = {"3-5%": {bets: 0, wins: 0, pnl: 0}, "5-8%": {bets: 0, wins: 0, pnl: 0}, "8%+": {bets: 0, wins: 0, pnl: 0}};
             
@@ -100,12 +129,12 @@
             let tableHTML = '';
             for (const [key, stats] of Object.entries(buckets)) {
                 let winRate = stats.bets > 0 ? ((stats.wins / stats.bets) * 100).toFixed(1) : '0.0';
-                let pnlColor = stats.pnl > 0 ? 'text-green-600' : (stats.pnl < 0 ? 'text-red-600' : 'text-gray-900');
+                let pnlColor = stats.pnl > 0 ? 'text-green-500' : (stats.pnl < 0 ? 'text-red-500' : 'text-gray-400');
                 tableHTML += `
-                    <tr class="border-t">
-                        <td class="p-4 font-bold text-gray-800">${key}</td>
-                        <td class="p-4">${stats.bets}</td>
-                        <td class="p-4">${winRate}%</td>
+                    <tr>
+                        <td class="p-4 font-bold text-gray-200">${key}</td>
+                        <td class="p-4 text-gray-300">${stats.bets}</td>
+                        <td class="p-4 text-gray-300">${winRate}%</td>
                         <td class="p-4 font-bold ${pnlColor}">$${stats.pnl.toFixed(2)}</td>
                     </tr>
                 `;
