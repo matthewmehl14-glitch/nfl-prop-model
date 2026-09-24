@@ -1,0 +1,31 @@
+name: Run NFL Simulations
+
+on:
+  schedule:
+    - cron: '0 */6 * * *' # Runs every 6 hours automatically
+  workflow_dispatch: # Allows you to click a button to run it manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Install Dependencies
+        run: pip install pandas numpy requests nfl_data_py
+      - name: Run Script
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+        run: python main.py
+      - name: Commit Backtest & JSON Data
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add data.json backtest_log.json
+          git commit -m "Automated model execution" || exit 0
+          git push
