@@ -24,22 +24,6 @@ def clean_name(name):
     name = re.sub(r'[^\w\s]', '', name)
     return ' '.join(name.strip().lower().split())
 
-def power_devig(p_over_implied, p_under_implied):
-    """Solves p_over^k + p_under^k = 1 via bisection (Power Method)."""
-    if p_over_implied <= 0 or p_under_implied <= 0:
-        return p_over_implied / (p_over_implied + p_under_implied)
-    
-    low, high = 0.001, 10.0
-    for _ in range(30):
-        mid = (low + high) / 2.0
-        val = (p_over_implied ** mid) + (p_under_implied ** mid)
-        if val > 1.0:
-            low = mid
-        else:
-            high = mid
-    k = (low + high) / 2.0
-    return p_over_implied ** k
-
 def get_defensive_multipliers(weekly_df):
     """Calculates opponent defensive multipliers relative to league averages."""
     if weekly_df.empty: return {}
@@ -55,9 +39,9 @@ def get_defensive_multipliers(weekly_df):
     for _, row in def_stats.iterrows():
         team = row['opponent_team']
         multipliers[team] = {
-            'player_pass_yds': float(np.clip(row['passing_yards'] / max(league_pass_avg, 1), 0.80, 1.25)),
-            'player_rush_yds': float(np.clip(row['rushing_yards'] / max(league_rush_avg, 1), 0.80, 1.25)),
-            'player_reception_yds': float(np.clip(row['receiving_yards'] / max(league_rec_avg, 1), 0.80, 1.25))
+            'player_pass_yds': float(np.clip(row['passing_yards'] / max(league_pass_avg, 1), 0.85, 1.15)),
+            'player_rush_yds': float(np.clip(row['rushing_yards'] / max(league_rush_avg, 1), 0.85, 1.15)),
+            'player_reception_yds': float(np.clip(row['receiving_yards'] / max(league_rec_avg, 1), 0.85, 1.15))
         }
     return multipliers
 
@@ -96,95 +80,85 @@ def get_live_data():
     else:
         stats = pd.DataFrame()
 
-    markets = "player_pass_yds,player_rush_yds,player_reception_yds,player_pass_tds"
+    markets = "player_pass_yds,player_rush_yds,player_reception_yds,player_pass_tds,player_rush_tds,player_reception_tds"
 
     for event in events_response:
         game_title = f"{event['away_team']} @ {event['home_team']}"
         event_id = event['id']
         
-        # Check FanDuel first, fallback to DraftKings if FanDuel hasn't posted lines
+        # Prioritize FanDuel, fallback to DraftKings
         odds_url = f"https://api.the-odds-api.com/v4/sports/americanfootball_nfl/events/{event_id}/odds?apiKey={ODDS_API_KEY}&regions=us&markets={markets}&bookmakers=fanduel,draftkings"
         odds_response = requests.get(odds_url).json()
         
         if 'bookmakers' not in odds_response or not odds_response['bookmakers']:
             continue
             
-        # Prioritize FanDuel, but take DraftKings if necessary
         bookmaker = next((b for b in odds_response['bookmakers'] if b['key'] == 'fanduel'), odds_response['bookmakers'][0])
         
         for market in bookmaker.get('markets', []):
             prop_type = market['key']
-            paired_outcomes = {}
             
             for outcome in market.get('outcomes', []):
-                p_name = outcome.get('description')
-                point = outcome.get('point', 0.5)
-                side = outcome.get('name')
-                price = outcome.get('price', -110)
-                
-                key = (p_name, point)
-                if key not in paired_outcomes: paired_outcomes[key] = {}
-                paired_outcomes[key][side] = price
-            
-            for (player_name, line), sides in paired_outcomes.items():
-                # Allow 'Yes' for TDs, or 'Over' for yardage
-                over_price = sides.get('Over') or sides.get('Yes')
-                under_price = sides.get('Under') or sides.get('No')
-                
-                if not over_price: 
+                # We only need the Over/Yes side to run the raw EV calculation
+                if outcome.get('name') not in ['Over', 'Yes']: 
                     continue
                 
-                dec_over = (over_price / 100) + 1 if over_price > 0 else (100 / abs(over_price)) + 1
-                imp_over = 1.0 / dec_over
+                player_name = outcome.get('description')
+                line = outcome.get('point', 0.5)
+                price = outcome.get('price', -110)
                 
-                # If both sides exist, Power Devig. If only one exists, apply standard 5% vig strip.
-                if under_price:
-                    dec_under = (under_price / 100) + 1 if under_price > 0 else (100 / abs(under_price)) + 1
-                    imp_under = 1.0 / dec_under
-                    fair_prob = power_devig(imp_over, imp_under)
-                else:
-                    fair_prob = imp_over * 0.95 
+                # Convert American to Decimal
+                dec_over = (price / 100) + 1 if price > 0 else (100 / abs(price)) + 1
                 
                 cleaned_api_name = clean_name(player_name)
                 player_stats = stats[stats['clean_name'] == cleaned_api_name] if not stats.empty else pd.DataFrame()
+                is_td = "tds" in prop_type
                 
-                if player_stats.empty:
-                    continue
+                # SAFE FALLBACK: If player data is missing/rookies, default to the sportsbook line 
+                # so they STILL appear on the dashboard rather than being deleted.
+                mean_val = line
+                std_val = max(line * 0.25, 1.0)
+                found_real_stats = False
+
+                if not player_stats.empty:
+                    try:
+                        if prop_type == 'player_pass_yds':
+                            mean_val = player_stats['passing_yards_mean'].values[0]
+                            std_val = player_stats['passing_yards_std'].values[0]
+                        elif prop_type == 'player_rush_yds':
+                            mean_val = player_stats['rushing_yards_mean'].values[0]
+                            std_val = player_stats['rushing_yards_std'].values[0]
+                        elif prop_type == 'player_reception_yds':
+                            mean_val = player_stats['receiving_yards_mean'].values[0]
+                            std_val = player_stats['receiving_yards_std'].values[0]
+                        elif prop_type == 'player_pass_tds':
+                            mean_val = player_stats['passing_tds_mean'].values[0]
+                        elif prop_type == 'player_rush_tds':
+                            mean_val = player_stats['rushing_tds_mean'].values[0]
+                        elif prop_type == 'player_reception_tds':
+                            mean_val = player_stats['receiving_tds_mean'].values[0]
+
+                        if not pd.isna(mean_val):
+                            found_real_stats = True
+                            if not is_td and (pd.isna(std_val) or std_val <= 0):
+                                std_val = max(mean_val * 0.25, 1.0) # Handle 1-game sample sizes
+                        else:
+                            mean_val = line
+                    except:
+                        pass
                 
-                mean_val, std_val = 0, 0
-                is_td = False
-                
-                try:
-                    if prop_type == 'player_pass_yds':
-                        mean_val = player_stats['passing_yards_mean'].values[0]
-                        std_val = player_stats['passing_yards_std'].values[0]
-                    elif prop_type == 'player_rush_yds':
-                        mean_val = player_stats['rushing_yards_mean'].values[0]
-                        std_val = player_stats['rushing_yards_std'].values[0]
-                    elif prop_type == 'player_reception_yds':
-                        mean_val = player_stats['receiving_yards_mean'].values[0]
-                        std_val = player_stats['receiving_yards_std'].values[0]
-                    elif prop_type == 'player_pass_tds':
-                        mean_val = player_stats['passing_tds_mean'].values[0]
-                        is_td = True
-                except:
-                    continue
-                    
-                if pd.isna(mean_val): continue
-                
-                # Fix for early season 1-game sample sizes (NaN standard deviation)
-                if not is_td and (pd.isna(std_val) or std_val <= 0):
-                    std_val = max(mean_val * 0.25, 1.0)
-                
+                # Apply opponent adjustment only if we have real data
                 def_mult = 1.0
-                opp_team_code = event['home_team'] if player_name in event['away_team'] else event['away_team']
-                if opp_team_code in def_multipliers and prop_type in def_multipliers[opp_team_code]:
-                    def_mult = def_multipliers[opp_team_code][prop_type]
-                    
+                if found_real_stats:
+                    opp_team_code = event['home_team'] if player_name in event['away_team'] else event['away_team']
+                    if opp_team_code in def_multipliers and prop_type in def_multipliers[opp_team_code]:
+                        def_mult = def_multipliers[opp_team_code][prop_type]
+                        
                 adjusted_mean = mean_val * def_mult
 
+                # Run Distributions
                 simulations = 10000
-                if is_td or "tds" in prop_type:
+                if is_td:
                     sims = np.random.poisson(lam=max(adjusted_mean, 0.01), size=simulations)
                 else:
                     if adjusted_mean <= 0 or std_val <= 0: continue
@@ -195,8 +169,8 @@ def get_live_data():
                 sim_hit_rate = np.sum(sims > line) / simulations
                 projection = np.median(sims)
                 
-                blended_prob = (0.60 * sim_hit_rate) + (0.40 * fair_prob)
-                ev_pct = (blended_prob * dec_over) - 1.0
+                # Straight EV Calculation (No Devig)
+                ev_pct = (sim_hit_rate * dec_over) - 1.0
                 
                 if ev_pct > 0.03:
                     bucket = "3-5%" if ev_pct < 0.05 else ("5-8%" if ev_pct < 0.08 else "8%+")
@@ -206,7 +180,7 @@ def get_live_data():
                         "player": player_name,
                         "prop": prop_type,
                         "line": line,
-                        "odds": over_price,
+                        "odds": price,
                         "ev": round(ev_pct, 4),
                         "bucket": bucket,
                         "stake": FLAT_BET_SIZE,
