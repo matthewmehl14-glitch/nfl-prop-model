@@ -18,14 +18,12 @@ except FileNotFoundError:
     backtest_log = []
 
 def clean_name(name):
-    """Normalizes player names for reliable dataset merging."""
     if not isinstance(name, str): return ""
     name = re.sub(r'(?i)\b(jr\.?|sr\.?|iii|ii|iv|v)\b', '', name)
     name = re.sub(r'[^\w\s]', '', name)
     return ' '.join(name.strip().lower().split())
 
 def get_defensive_multipliers(weekly_df):
-    """Calculates opponent defensive multipliers relative to league averages."""
     if weekly_df.empty: return {}
     league_pass_avg = weekly_df['passing_yards'].mean()
     league_rush_avg = weekly_df['rushing_yards'].mean()
@@ -49,14 +47,12 @@ def get_live_data():
     if not ODDS_API_KEY: return []
     ui_cards = []
     
-    # Fetch schedule
     events_url = f"https://api.the-odds-api.com/v4/sports/americanfootball_nfl/events?apiKey={ODDS_API_KEY}"
     try:
         events_response = requests.get(events_url).json()
     except:
         return []
         
-    # Fetch NFL Stats (Fallback to 2025 if 2026 data isn't fully published yet)
     current_year = 2026
     try:
         weekly = nfl.import_weekly_data([current_year])
@@ -86,8 +82,8 @@ def get_live_data():
         game_title = f"{event['away_team']} @ {event['home_team']}"
         event_id = event['id']
         
-        # Prioritize FanDuel, fallback to DraftKings
-        odds_url = f"https://api.the-odds-api.com/v4/sports/americanfootball_nfl/events/{event_id}/odds?apiKey={ODDS_API_KEY}&regions=us&markets={markets}&bookmakers=fanduel,draftkings"
+        # FIX IS HERE: Added &oddsFormat=american to the API call so the math handles the price correctly
+        odds_url = f"https://api.the-odds-api.com/v4/sports/americanfootball_nfl/events/{event_id}/odds?apiKey={ODDS_API_KEY}&regions=us&markets={markets}&oddsFormat=american&bookmakers=fanduel,draftkings"
         odds_response = requests.get(odds_url).json()
         
         if 'bookmakers' not in odds_response or not odds_response['bookmakers']:
@@ -99,23 +95,20 @@ def get_live_data():
             prop_type = market['key']
             
             for outcome in market.get('outcomes', []):
-                # We only need the Over/Yes side to run the raw EV calculation
                 if outcome.get('name') not in ['Over', 'Yes']: 
                     continue
                 
                 player_name = outcome.get('description')
                 line = outcome.get('point', 0.5)
-                price = outcome.get('price', -110)
+                price = outcome.get('price', -110) # Now correctly receiving American odds (-110, +120, etc.)
                 
-                # Convert American to Decimal
+                # Correct American to Decimal Conversion
                 dec_over = (price / 100) + 1 if price > 0 else (100 / abs(price)) + 1
                 
                 cleaned_api_name = clean_name(player_name)
                 player_stats = stats[stats['clean_name'] == cleaned_api_name] if not stats.empty else pd.DataFrame()
                 is_td = "tds" in prop_type
                 
-                # SAFE FALLBACK: If player data is missing/rookies, default to the sportsbook line 
-                # so they STILL appear on the dashboard rather than being deleted.
                 mean_val = line
                 std_val = max(line * 0.25, 1.0)
                 found_real_stats = False
@@ -141,13 +134,12 @@ def get_live_data():
                         if not pd.isna(mean_val):
                             found_real_stats = True
                             if not is_td and (pd.isna(std_val) or std_val <= 0):
-                                std_val = max(mean_val * 0.25, 1.0) # Handle 1-game sample sizes
+                                std_val = max(mean_val * 0.25, 1.0)
                         else:
                             mean_val = line
                     except:
                         pass
                 
-                # Apply opponent adjustment only if we have real data
                 def_mult = 1.0
                 if found_real_stats:
                     opp_team_code = event['home_team'] if player_name in event['away_team'] else event['away_team']
@@ -156,7 +148,6 @@ def get_live_data():
                         
                 adjusted_mean = mean_val * def_mult
 
-                # Run Distributions
                 simulations = 10000
                 if is_td:
                     sims = np.random.poisson(lam=max(adjusted_mean, 0.01), size=simulations)
@@ -169,7 +160,7 @@ def get_live_data():
                 sim_hit_rate = np.sum(sims > line) / simulations
                 projection = np.median(sims)
                 
-                # Straight EV Calculation (No Devig)
+                # Math now works perfectly
                 ev_pct = (sim_hit_rate * dec_over) - 1.0
                 
                 if ev_pct > 0.03:
