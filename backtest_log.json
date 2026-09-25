@@ -245,5 +245,18 @@
         "stake": 25,
         "status": "pending",
         "pnl": 0
+    },
+    {
+        "date": "2026-09-25",
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "player": "Jalen Hurts",
+        "prop": "player_pass_tds",
+        "line": 1.5,
+        "odds": 132,
+        "ev": 0.0322,
+        "bucket": "3-5%",
+        "stake": 25,
+        "status": "pending",
+        "pnl": 0
     }
 ]
