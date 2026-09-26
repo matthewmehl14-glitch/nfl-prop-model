@@ -375,5 +375,18 @@
         "stake": 25,
         "status": "pending",
         "pnl": 0
+    },
+    {
+        "date": "2026-09-26",
+        "game": "Los Angeles Rams @ Denver Broncos",
+        "player": "Bo Nix",
+        "prop": "player_pass_tds",
+        "line": 1.5,
+        "odds": 128,
+        "ev": 0.0333,
+        "bucket": "3-5%",
+        "stake": 25,
+        "status": "pending",
+        "pnl": 0
     }
 ]
