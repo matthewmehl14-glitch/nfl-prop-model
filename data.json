@@ -5,7 +5,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0242
+        "ev": 0.0039
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -13,31 +13,31 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.2531
+        "ev": -0.2612
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Josh Allen",
         "prop": "player_pass_yds",
         "line": 238.5,
-        "proj": 233.7,
-        "ev": -0.1249
+        "proj": 232.3,
+        "ev": -0.1357
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Justin Herbert",
         "prop": "player_pass_yds",
         "line": 224.5,
-        "proj": 220.5,
-        "ev": -0.1138
+        "proj": 219.3,
+        "ev": -0.1324
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Omarion Hampton",
         "prop": "player_reception_yds",
         "line": 11.5,
-        "proj": 11.3,
-        "ev": -0.1228
+        "proj": 11.2,
+        "ev": -0.1376
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -45,15 +45,15 @@
         "prop": "player_reception_yds",
         "line": 35.5,
         "proj": 34.8,
-        "ev": -0.1247
+        "ev": -0.1164
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Tre Harris",
         "prop": "player_reception_yds",
         "line": 31.5,
-        "proj": 31.0,
-        "ev": -0.1081
+        "proj": 30.7,
+        "ev": -0.1421
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -61,15 +61,15 @@
         "prop": "player_reception_yds",
         "line": 8.5,
         "proj": 8.3,
-        "ev": -0.1262
+        "ev": -0.126
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "James Cook",
         "prop": "player_reception_yds",
         "line": 10.5,
-        "proj": 10.2,
-        "ev": -0.141
+        "proj": 10.3,
+        "ev": -0.1269
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -77,7 +77,7 @@
         "prop": "player_reception_yds",
         "line": 56.5,
         "proj": 55.3,
-        "ev": -0.1217
+        "ev": -0.1286
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -85,55 +85,55 @@
         "prop": "player_reception_yds",
         "line": 35.5,
         "proj": 34.8,
-        "ev": -0.1153
+        "ev": -0.1132
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "DJ Moore",
         "prop": "player_reception_yds",
         "line": 49.5,
-        "proj": 48.4,
-        "ev": -0.125
+        "proj": 48.7,
+        "ev": -0.1104
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Ladd McConkey",
         "prop": "player_reception_yds",
         "line": 57.5,
-        "proj": 56.3,
-        "ev": -0.1241
+        "proj": 56.1,
+        "ev": -0.1369
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Khalil Shakir",
         "prop": "player_reception_yds",
         "line": 43.5,
-        "proj": 42.6,
-        "ev": -0.1209
+        "proj": 42.5,
+        "ev": -0.1307
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Justin Herbert",
         "prop": "player_rush_yds",
         "line": 19.5,
-        "proj": 19.2,
-        "ev": -0.1029
+        "proj": 19.1,
+        "ev": -0.1128
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Omarion Hampton",
         "prop": "player_rush_yds",
         "line": 58.5,
-        "proj": 57.0,
-        "ev": -0.1361
+        "proj": 57.2,
+        "ev": -0.1234
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "James Cook",
         "prop": "player_rush_yds",
         "line": 79.5,
-        "proj": 78.1,
-        "ev": -0.1149
+        "proj": 77.5,
+        "ev": -0.1386
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
@@ -141,15 +141,15 @@
         "prop": "player_rush_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.122
+        "ev": -0.1237
     },
     {
         "game": "Los Angeles Chargers @ Buffalo Bills",
         "name": "Josh Allen",
         "prop": "player_rush_yds",
         "line": 32.5,
-        "proj": 32.0,
-        "ev": -0.1068
+        "proj": 31.8,
+        "ev": -0.1194
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -157,7 +157,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.0524
+        "ev": -0.067
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -165,31 +165,31 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.1564
+        "ev": 0.1939
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Bryce Young",
         "prop": "player_pass_yds",
         "line": 223.5,
-        "proj": 218.3,
-        "ev": -0.1254
+        "proj": 218.4,
+        "ev": -0.1267
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Deshaun Watson",
         "prop": "player_pass_yds",
         "line": 190.5,
-        "proj": 186.6,
-        "ev": -0.1196
+        "proj": 186.1,
+        "ev": -0.1335
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Jalen Coker",
         "prop": "player_reception_yds",
         "line": 59.5,
-        "proj": 58.3,
-        "ev": -0.1142
+        "proj": 58.0,
+        "ev": -0.1365
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -197,47 +197,47 @@
         "prop": "player_reception_yds",
         "line": 9.5,
         "proj": 9.3,
-        "ev": -0.113
+        "ev": -0.119
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Chuba Hubbard",
         "prop": "player_reception_yds",
         "line": 15.5,
-        "proj": 15.3,
-        "ev": -0.0056
+        "proj": 15.2,
+        "ev": -0.0316
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Darren Waller",
         "prop": "player_reception_yds",
         "line": 20.5,
-        "proj": 20.1,
-        "ev": -0.1166
+        "proj": 20.2,
+        "ev": -0.1134
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Harold Fannin Jr.",
         "prop": "player_reception_yds",
         "line": 37.5,
-        "proj": 36.7,
-        "ev": -0.1254
+        "proj": 36.6,
+        "ev": -0.1292
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Tetairoa McMillan",
         "prop": "player_reception_yds",
         "line": 62.5,
-        "proj": 61.3,
-        "ev": -0.1151
+        "proj": 61.4,
+        "ev": -0.1183
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "KC Concepcion",
         "prop": "player_reception_yds",
         "line": 33.5,
-        "proj": 32.8,
-        "ev": -0.1312
+        "proj": 32.9,
+        "ev": -0.1125
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -245,7 +245,7 @@
         "prop": "player_reception_yds",
         "line": 12.5,
         "proj": 12.2,
-        "ev": -0.1297
+        "ev": -0.1234
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -253,39 +253,39 @@
         "prop": "player_reception_yds",
         "line": 20.5,
         "proj": 20.0,
-        "ev": -0.1325
+        "ev": -0.1299
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Denzel Boston",
         "prop": "player_reception_yds",
         "line": 47.5,
-        "proj": 46.6,
-        "ev": -0.1196
+        "proj": 46.7,
+        "ev": -0.1155
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Quinshon Judkins",
         "prop": "player_rush_yds",
         "line": 59.5,
-        "proj": 58.3,
-        "ev": -0.1164
+        "proj": 58.1,
+        "ev": -0.1325
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Raheim Sanders",
         "prop": "player_rush_yds",
         "line": 7.5,
-        "proj": 7.3,
-        "ev": -0.1247
+        "proj": 7.4,
+        "ev": -0.1095
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Chuba Hubbard",
         "prop": "player_rush_yds",
         "line": 71.5,
-        "proj": 70.3,
-        "ev": -0.1138
+        "proj": 70.0,
+        "ev": -0.1286
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -293,15 +293,15 @@
         "prop": "player_rush_yds",
         "line": 5.5,
         "proj": 5.4,
-        "ev": -0.0704
+        "ev": -0.0839
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
         "name": "Deshaun Watson",
         "prop": "player_rush_yds",
         "line": 25.5,
-        "proj": 25.1,
-        "ev": -0.1085
+        "proj": 25.0,
+        "ev": -0.1187
     },
     {
         "game": "Carolina Panthers @ Cleveland Browns",
@@ -309,7 +309,7 @@
         "prop": "player_rush_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.122
+        "ev": -0.1215
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -317,7 +317,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.1242
+        "ev": -0.1236
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -325,23 +325,23 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.1785
+        "ev": 0.1662
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Aaron Rodgers",
         "prop": "player_pass_yds",
         "line": 220.5,
-        "proj": 215.4,
-        "ev": -0.1284
+        "proj": 216.2,
+        "ev": -0.1211
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Joe Burrow",
         "prop": "player_pass_yds",
         "line": 253.5,
-        "proj": 247.8,
-        "ev": -0.1282
+        "proj": 247.5,
+        "ev": -0.1312
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -349,15 +349,23 @@
         "prop": "player_reception_yds",
         "line": 7.5,
         "proj": 7.4,
-        "ev": -0.117
+        "ev": -0.1222
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Mike Gesicki",
         "prop": "player_reception_yds",
         "line": 23.5,
-        "proj": 23.0,
-        "ev": -0.1218
+        "proj": 23.1,
+        "ev": -0.1117
+    },
+    {
+        "game": "Cincinnati Bengals @ Pittsburgh Steelers",
+        "name": "Erick All",
+        "prop": "player_reception_yds",
+        "line": 5.5,
+        "proj": 5.4,
+        "ev": -0.125
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -365,7 +373,7 @@
         "prop": "player_reception_yds",
         "line": 52.5,
         "proj": 51.3,
-        "ev": -0.1305
+        "ev": -0.1372
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -373,47 +381,55 @@
         "prop": "player_reception_yds",
         "line": 15.5,
         "proj": 15.2,
-        "ev": -0.1234
+        "ev": -0.119
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Pat Freiermuth",
         "prop": "player_reception_yds",
         "line": 36.5,
-        "proj": 35.7,
-        "ev": -0.1318
+        "proj": 35.9,
+        "ev": -0.1136
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Tee Higgins",
         "prop": "player_reception_yds",
         "line": 53.5,
-        "proj": 52.5,
-        "ev": -0.1198
+        "proj": 52.4,
+        "ev": -0.1234
+    },
+    {
+        "game": "Cincinnati Bengals @ Pittsburgh Steelers",
+        "name": "Roman Wilson",
+        "prop": "player_reception_yds",
+        "line": 22.5,
+        "proj": 22.0,
+        "ev": -0.1325
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Chase Brown",
         "prop": "player_reception_yds",
         "line": 21.5,
-        "proj": 20.9,
-        "ev": -0.1397
+        "proj": 21.0,
+        "ev": -0.1346
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Ja'Marr Chase",
         "prop": "player_reception_yds",
         "line": 74.5,
-        "proj": 73.3,
-        "ev": -0.1143
+        "proj": 72.7,
+        "ev": -0.1305
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Michael Pittman Jr.",
         "prop": "player_reception_yds",
-        "line": 25.5,
-        "proj": 25.1,
-        "ev": -0.1063
+        "line": 24.5,
+        "proj": 24.0,
+        "ev": -0.1218
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -421,15 +437,15 @@
         "prop": "player_reception_yds",
         "line": 25.5,
         "proj": 24.9,
-        "ev": -0.1401
+        "ev": -0.1344
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
         "name": "Jaylen Warren",
         "prop": "player_rush_yds",
         "line": 57.5,
-        "proj": 55.9,
-        "ev": -0.1466
+        "proj": 56.1,
+        "ev": -0.1277
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -437,7 +453,7 @@
         "prop": "player_rush_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1344
+        "ev": -0.1224
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -445,7 +461,7 @@
         "prop": "player_rush_yds",
         "line": 63.5,
         "proj": 62.4,
-        "ev": -0.1127
+        "ev": -0.1157
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -453,7 +469,7 @@
         "prop": "player_rush_yds",
         "line": 0.5,
         "proj": 0.1,
-        "ev": -0.5184
+        "ev": -0.5182
     },
     {
         "game": "Cincinnati Bengals @ Pittsburgh Steelers",
@@ -461,7 +477,7 @@
         "prop": "player_rush_yds",
         "line": 5.5,
         "proj": 5.4,
-        "ev": -0.1314
+        "ev": -0.1157
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -469,7 +485,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.3275
+        "ev": -0.3345
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -477,23 +493,23 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0706
+        "ev": 0.057
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Jared Goff",
         "prop": "player_pass_yds",
         "line": 258.5,
-        "proj": 253.3,
-        "ev": -0.119
+        "proj": 252.9,
+        "ev": -0.126
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Geno Smith",
         "prop": "player_pass_yds",
         "line": 225.5,
-        "proj": 221.1,
-        "ev": -0.1267
+        "proj": 220.6,
+        "ev": -0.1294
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -501,23 +517,23 @@
         "prop": "player_reception_yds",
         "line": 15.5,
         "proj": 15.2,
-        "ev": -0.113
+        "ev": -0.1188
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Sam LaPorta",
         "prop": "player_reception_yds",
         "line": 45.5,
-        "proj": 44.7,
-        "ev": -0.1127
+        "proj": 44.5,
+        "ev": -0.129
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Isaiah Williams",
         "prop": "player_reception_yds",
-        "line": 24.5,
-        "proj": 23.9,
-        "ev": -0.1295
+        "line": 25.5,
+        "proj": 25.1,
+        "ev": -0.1157
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -525,7 +541,7 @@
         "prop": "player_reception_yds",
         "line": 21.5,
         "proj": 21.0,
-        "ev": -0.1254
+        "ev": -0.1269
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -533,23 +549,23 @@
         "prop": "player_reception_yds",
         "line": 45.5,
         "proj": 44.6,
-        "ev": -0.1188
+        "ev": -0.129
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Kenyon Sadiq",
         "prop": "player_reception_yds",
-        "line": 25.5,
-        "proj": 25.0,
-        "ev": -0.1237
+        "line": 28.5,
+        "proj": 27.9,
+        "ev": -0.1185
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Garrett Wilson",
         "prop": "player_reception_yds",
-        "line": 67.5,
-        "proj": 65.8,
-        "ev": -0.1322
+        "line": 69.5,
+        "proj": 67.8,
+        "ev": -0.138
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -557,23 +573,23 @@
         "prop": "player_reception_yds",
         "line": 35.5,
         "proj": 34.8,
-        "ev": -0.1256
+        "ev": -0.1269
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Jameson Williams",
         "prop": "player_reception_yds",
         "line": 54.5,
-        "proj": 53.5,
-        "ev": -0.1188
+        "proj": 53.6,
+        "ev": -0.114
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Amon-Ra St. Brown",
         "prop": "player_reception_yds",
         "line": 75.5,
-        "proj": 74.1,
-        "ev": -0.1173
+        "proj": 73.8,
+        "ev": -0.131
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -581,7 +597,7 @@
         "prop": "player_rush_yds",
         "line": 10.5,
         "proj": 10.3,
-        "ev": -0.1247
+        "ev": -0.1271
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -589,7 +605,7 @@
         "prop": "player_rush_yds",
         "line": 11.5,
         "proj": 11.3,
-        "ev": -0.1234
+        "ev": -0.1194
     },
     {
         "game": "New York Jets @ Detroit Lions",
@@ -597,31 +613,31 @@
         "prop": "player_rush_yds",
         "line": 0.5,
         "proj": 0.1,
-        "ev": -0.4648
+        "ev": -0.4681
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Braelon Allen",
         "prop": "player_rush_yds",
         "line": 17.5,
-        "proj": 17.1,
-        "ev": -0.1309
+        "proj": 17.2,
+        "ev": -0.1187
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Breece Hall",
         "prop": "player_rush_yds",
         "line": 57.5,
-        "proj": 56.4,
-        "ev": -0.117
+        "proj": 56.2,
+        "ev": -0.1341
     },
     {
         "game": "New York Jets @ Detroit Lions",
         "name": "Jahmyr Gibbs",
         "prop": "player_rush_yds",
         "line": 87.5,
-        "proj": 85.7,
-        "ev": -0.1202
+        "proj": 85.2,
+        "ev": -0.135
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -629,7 +645,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0182
+        "ev": 0.0131
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -637,39 +653,39 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.126
+        "ev": 0.1609
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Daniel Jones",
         "prop": "player_pass_yds",
-        "line": 218.5,
-        "proj": 213.6,
-        "ev": -0.1318
+        "line": 214.5,
+        "proj": 209.4,
+        "ev": -0.1299
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "C.J. Stroud",
         "prop": "player_pass_yds",
         "line": 243.5,
-        "proj": 238.8,
-        "ev": -0.1127
+        "proj": 238.3,
+        "ev": -0.1226
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Keenan Allen",
         "prop": "player_reception_yds",
         "line": 32.5,
-        "proj": 31.7,
-        "ev": -0.1408
+        "proj": 31.8,
+        "ev": -0.1301
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Kayshon Boutte",
         "prop": "player_reception_yds",
         "line": 37.5,
-        "proj": 36.8,
-        "ev": -0.1172
+        "proj": 36.5,
+        "ev": -0.1361
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -677,31 +693,31 @@
         "prop": "player_reception_yds",
         "line": 21.5,
         "proj": 21.1,
-        "ev": -0.1177
+        "ev": -0.1252
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "David Montgomery",
         "prop": "player_reception_yds",
         "line": 7.5,
-        "proj": 7.4,
-        "ev": -0.1209
+        "proj": 7.3,
+        "ev": -0.135
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Jaylin Noel",
         "prop": "player_reception_yds",
         "line": 27.5,
-        "proj": 26.9,
-        "ev": -0.1322
+        "proj": 26.8,
+        "ev": -0.1356
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Jared Wayne",
         "prop": "player_reception_yds",
-        "line": 15.5,
-        "proj": 15.2,
-        "ev": -0.12
+        "line": 16.5,
+        "proj": 16.2,
+        "ev": -0.1307
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -709,7 +725,7 @@
         "prop": "player_reception_yds",
         "line": 11.5,
         "proj": 11.3,
-        "ev": -0.1173
+        "ev": -0.119
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -717,31 +733,31 @@
         "prop": "player_reception_yds",
         "line": 16.5,
         "proj": 16.2,
-        "ev": -0.1151
+        "ev": -0.1203
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Dalton Schultz",
         "prop": "player_reception_yds",
         "line": 52.5,
-        "proj": 51.5,
-        "ev": -0.1192
+        "proj": 51.4,
+        "ev": -0.1245
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Tyler Warren",
         "prop": "player_reception_yds",
         "line": 46.5,
-        "proj": 45.6,
-        "ev": -0.119
+        "proj": 45.5,
+        "ev": -0.1324
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Xavier Hutchinson",
         "prop": "player_reception_yds",
         "line": 38.5,
-        "proj": 37.9,
-        "ev": -0.1065
+        "proj": 37.5,
+        "ev": -0.1466
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -749,15 +765,15 @@
         "prop": "player_reception_yds",
         "line": 50.5,
         "proj": 49.7,
-        "ev": -0.1117
+        "ev": -0.1083
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Darius Slayton",
         "prop": "player_reception_yds",
-        "line": 13.5,
-        "proj": 13.2,
-        "ev": -0.1031
+        "line": 12.5,
+        "proj": 12.2,
+        "ev": -0.1288
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -765,15 +781,15 @@
         "prop": "player_rush_yds",
         "line": 8.5,
         "proj": 8.3,
-        "ev": -0.1265
+        "ev": -0.1254
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "Jonathan Taylor",
         "prop": "player_rush_yds",
         "line": 81.5,
-        "proj": 79.9,
-        "ev": -0.1207
+        "proj": 79.7,
+        "ev": -0.1284
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -781,15 +797,15 @@
         "prop": "player_rush_yds",
         "line": 27.5,
         "proj": 26.9,
-        "ev": -0.1271
+        "ev": -0.1288
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
         "name": "David Montgomery",
         "prop": "player_rush_yds",
-        "line": 48.5,
-        "proj": 47.4,
-        "ev": -0.1271
+        "line": 49.5,
+        "proj": 48.4,
+        "ev": -0.1249
     },
     {
         "game": "Houston Texans @ Indianapolis Colts",
@@ -797,7 +813,7 @@
         "prop": "player_rush_yds",
         "line": 10.5,
         "proj": 10.3,
-        "ev": -0.1262
+        "ev": -0.1198
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -805,7 +821,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0514
+        "ev": 0.0598
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -813,23 +829,23 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.1707
+        "ev": -0.1564
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Trevor Lawrence",
         "prop": "player_pass_yds",
         "line": 223.5,
-        "proj": 219.4,
-        "ev": -0.1149
+        "proj": 219.6,
+        "ev": -0.1125
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Drake Maye",
         "prop": "player_pass_yds",
         "line": 222.5,
-        "proj": 216.1,
-        "ev": -0.1491
+        "proj": 218.8,
+        "ev": -0.113
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -837,31 +853,31 @@
         "prop": "player_reception_yds",
         "line": 33.5,
         "proj": 32.9,
-        "ev": -0.1173
+        "ev": -0.1166
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Hunter Henry",
         "prop": "player_reception_yds",
         "line": 41.5,
-        "proj": 40.4,
-        "ev": -0.1327
+        "proj": 40.7,
+        "ev": -0.1196
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Brenton Strange",
         "prop": "player_reception_yds",
         "line": 27.5,
-        "proj": 26.9,
-        "ev": -0.1307
+        "proj": 27.0,
+        "ev": -0.1179
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Bhayshul Tuten",
         "prop": "player_reception_yds",
         "line": 9.5,
-        "proj": 9.3,
-        "ev": -0.1215
+        "proj": 9.4,
+        "ev": -0.1066
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -869,23 +885,23 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1237
+        "ev": -0.1145
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Jakobi Meyers",
         "prop": "player_reception_yds",
         "line": 34.5,
-        "proj": 33.9,
-        "ev": -0.1162
+        "proj": 33.8,
+        "ev": -0.1173
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Parker Washington",
         "prop": "player_reception_yds",
         "line": 63.5,
-        "proj": 62.2,
-        "ev": -0.1265
+        "proj": 62.1,
+        "ev": -0.1359
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -893,7 +909,7 @@
         "prop": "player_reception_yds",
         "line": 9.5,
         "proj": 9.3,
-        "ev": -0.1162
+        "ev": -0.1356
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -901,7 +917,7 @@
         "prop": "player_reception_yds",
         "line": 36.5,
         "proj": 35.6,
-        "ev": -0.1282
+        "ev": -0.135
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -909,7 +925,7 @@
         "prop": "player_reception_yds",
         "line": 28.5,
         "proj": 27.9,
-        "ev": -0.1256
+        "ev": -0.1234
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -917,23 +933,23 @@
         "prop": "player_reception_yds",
         "line": 42.5,
         "proj": 41.7,
-        "ev": -0.1177
+        "ev": -0.1218
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Trevor Lawrence",
         "prop": "player_rush_yds",
         "line": 16.5,
-        "proj": 16.1,
-        "ev": -0.1279
+        "proj": 16.2,
+        "ev": -0.1267
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Rhamondre Stevenson",
         "prop": "player_rush_yds",
         "line": 37.5,
-        "proj": 36.5,
-        "ev": -0.144
+        "proj": 36.7,
+        "ev": -0.119
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -941,7 +957,7 @@
         "prop": "player_rush_yds",
         "line": 41.5,
         "proj": 40.7,
-        "ev": -0.1192
+        "ev": -0.1241
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
@@ -949,23 +965,23 @@
         "prop": "player_rush_yds",
         "line": 20.5,
         "proj": 20.1,
-        "ev": -0.1312
+        "ev": -0.1147
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Bhayshul Tuten",
         "prop": "player_rush_yds",
         "line": 52.5,
-        "proj": 51.0,
-        "ev": -0.1493
+        "proj": 51.5,
+        "ev": -0.1213
     },
     {
         "game": "New England Patriots @ Jacksonville Jaguars",
         "name": "Drake Maye",
         "prop": "player_rush_yds",
-        "line": 25.5,
-        "proj": 25.1,
-        "ev": -0.113
+        "line": 26.5,
+        "proj": 26.2,
+        "ev": -0.0984
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -973,7 +989,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.3486
+        "ev": -0.3409
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -981,23 +997,23 @@
         "prop": "player_pass_tds",
         "line": 0.5,
         "proj": 0.0,
-        "ev": -0.4235
+        "ev": -0.4052
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Malik Willis",
         "prop": "player_pass_yds",
         "line": 177.5,
-        "proj": 174.4,
-        "ev": -0.1134
+        "proj": 173.0,
+        "ev": -0.1361
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Patrick Mahomes",
         "prop": "player_pass_yds",
         "line": 235.5,
-        "proj": 229.9,
-        "ev": -0.1299
+        "proj": 230.4,
+        "ev": -0.1265
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1005,7 +1021,7 @@
         "prop": "player_reception_yds",
         "line": 19.5,
         "proj": 19.1,
-        "ev": -0.128
+        "ev": -0.1205
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1013,23 +1029,23 @@
         "prop": "player_reception_yds",
         "line": 19.5,
         "proj": 19.1,
-        "ev": -0.1134
+        "ev": -0.1224
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Travis Kelce",
         "prop": "player_reception_yds",
         "line": 51.5,
-        "proj": 50.2,
-        "ev": -0.1354
+        "proj": 50.4,
+        "ev": -0.1249
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Xavier Worthy",
         "prop": "player_reception_yds",
         "line": 37.5,
-        "proj": 36.7,
-        "ev": -0.1239
+        "proj": 36.9,
+        "ev": -0.1136
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1037,7 +1053,7 @@
         "prop": "player_reception_yds",
         "line": 48.5,
         "proj": 47.3,
-        "ev": -0.1324
+        "ev": -0.135
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1045,31 +1061,31 @@
         "prop": "player_reception_yds",
         "line": 15.5,
         "proj": 15.2,
-        "ev": -0.1305
+        "ev": -0.1089
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "De'Von Achane",
         "prop": "player_reception_yds",
         "line": 26.5,
-        "proj": 25.9,
-        "ev": -0.1316
+        "proj": 26.0,
+        "ev": -0.1172
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Emmett Johnson",
         "prop": "player_reception_yds",
         "line": 10.5,
-        "proj": 10.3,
-        "ev": -0.1095
+        "proj": 10.4,
+        "ev": -0.1046
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Kenneth Walker III",
         "prop": "player_reception_yds",
         "line": 22.5,
-        "proj": 22.0,
-        "ev": -0.1235
+        "proj": 22.1,
+        "ev": -0.1202
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1077,7 +1093,7 @@
         "prop": "player_reception_yds",
         "line": 22.5,
         "proj": 22.1,
-        "ev": -0.1145
+        "ev": -0.11
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1085,7 +1101,7 @@
         "prop": "player_reception_yds",
         "line": 35.5,
         "proj": 34.7,
-        "ev": -0.1232
+        "ev": -0.1337
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
@@ -1093,47 +1109,47 @@
         "prop": "player_rush_yds",
         "line": 8.5,
         "proj": 8.3,
-        "ev": -0.1264
+        "ev": -0.1265
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Kenneth Walker III",
         "prop": "player_rush_yds",
         "line": 82.5,
-        "proj": 80.8,
-        "ev": -0.1243
+        "proj": 80.4,
+        "ev": -0.1348
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "De'Von Achane",
         "prop": "player_rush_yds",
         "line": 59.5,
-        "proj": 58.3,
-        "ev": -0.1243
+        "proj": 58.7,
+        "ev": -0.1051
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Emmett Johnson",
         "prop": "player_rush_yds",
-        "line": 26.5,
-        "proj": 26.0,
-        "ev": -0.123
+        "line": 28.5,
+        "proj": 27.9,
+        "ev": -0.1175
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Malik Willis",
         "prop": "player_rush_yds",
         "line": 33.5,
-        "proj": 32.8,
-        "ev": -0.122
+        "proj": 32.7,
+        "ev": -0.1316
     },
     {
         "game": "Kansas City Chiefs @ Miami Dolphins",
         "name": "Patrick Mahomes",
         "prop": "player_rush_yds",
-        "line": 17.5,
-        "proj": 17.1,
-        "ev": -0.1271
+        "line": 16.5,
+        "proj": 16.1,
+        "ev": -0.1241
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1141,7 +1157,7 @@
         "prop": "player_pass_tds",
         "line": 0.5,
         "proj": 0.0,
-        "ev": -0.4535
+        "ev": -0.4453
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1149,31 +1165,31 @@
         "prop": "player_pass_tds",
         "line": 0.5,
         "proj": 0.0,
-        "ev": -0.4037
+        "ev": -0.4147
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Jameis Winston",
         "prop": "player_pass_yds",
-        "line": 206.5,
-        "proj": 202.2,
-        "ev": -0.1265
+        "line": 203.5,
+        "proj": 198.8,
+        "ev": -0.1335
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Cam Ward",
         "prop": "player_pass_yds",
-        "line": 189.5,
-        "proj": 185.3,
-        "ev": -0.126
+        "line": 187.5,
+        "proj": 182.9,
+        "ev": -0.1395
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Carnell Tate",
         "prop": "player_reception_yds",
         "line": 38.5,
-        "proj": 37.8,
-        "ev": -0.114
+        "proj": 37.7,
+        "ev": -0.1256
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1181,7 +1197,7 @@
         "prop": "player_reception_yds",
         "line": 23.5,
         "proj": 23.0,
-        "ev": -0.1192
+        "ev": -0.1258
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1189,7 +1205,7 @@
         "prop": "player_reception_yds",
         "line": 21.5,
         "proj": 21.0,
-        "ev": -0.1232
+        "ev": -0.1226
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1197,15 +1213,15 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1256
+        "ev": -0.1254
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Wan'Dale Robinson",
         "prop": "player_reception_yds",
         "line": 31.5,
-        "proj": 30.8,
-        "ev": -0.1307
+        "proj": 30.9,
+        "ev": -0.1151
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1213,23 +1229,23 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1183
+        "ev": -0.1348
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Darnell Mooney",
         "prop": "player_reception_yds",
         "line": 17.5,
-        "proj": 17.2,
-        "ev": -0.1125
+        "proj": 17.1,
+        "ev": -0.1361
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Tony Pollard",
         "prop": "player_reception_yds",
         "line": 6.5,
-        "proj": 6.4,
-        "ev": -0.117
+        "proj": 6.3,
+        "ev": -0.1367
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1237,7 +1253,7 @@
         "prop": "player_reception_yds",
         "line": 11.5,
         "proj": 11.3,
-        "ev": -0.1232
+        "ev": -0.1224
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1245,15 +1261,15 @@
         "prop": "player_reception_yds",
         "line": 40.5,
         "proj": 39.5,
-        "ev": -0.1352
+        "ev": -0.1361
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Malik Nabers",
         "prop": "player_reception_yds",
         "line": 56.5,
-        "proj": 55.4,
-        "ev": -0.1194
+        "proj": 55.5,
+        "ev": -0.1166
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1261,23 +1277,23 @@
         "prop": "player_rush_yds",
         "line": 11.5,
         "proj": 11.2,
-        "ev": -0.1342
+        "ev": -0.1294
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Tony Pollard",
         "prop": "player_rush_yds",
-        "line": 48.5,
-        "proj": 47.4,
-        "ev": -0.1314
+        "line": 50.5,
+        "proj": 49.4,
+        "ev": -0.1273
     },
     {
         "game": "Tennessee Titans @ New York Giants",
         "name": "Cam Skattebo",
         "prop": "player_rush_yds",
         "line": 57.5,
-        "proj": 56.5,
-        "ev": -0.1098
+        "proj": 56.3,
+        "ev": -0.1232
     },
     {
         "game": "Tennessee Titans @ New York Giants",
@@ -1285,15 +1301,7 @@
         "prop": "player_rush_yds",
         "line": 5.5,
         "proj": 5.4,
-        "ev": -0.116
-    },
-    {
-        "game": "Seattle Seahawks @ Washington Commanders",
-        "name": "Sam Darnold",
-        "prop": "player_pass_tds",
-        "line": 1.5,
-        "proj": 1.0,
-        "ev": -0.1068
+        "ev": -0.1192
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1301,23 +1309,31 @@
         "prop": "player_pass_tds",
         "line": 0.5,
         "proj": 0.0,
-        "ev": -0.4171
+        "ev": -0.3999
+    },
+    {
+        "game": "Seattle Seahawks @ Washington Commanders",
+        "name": "Sam Darnold",
+        "prop": "player_pass_tds",
+        "line": 1.5,
+        "proj": 1.0,
+        "ev": -0.0917
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Marcus Mariota",
         "prop": "player_pass_yds",
         "line": 170.5,
-        "proj": 166.6,
-        "ev": -0.1279
+        "proj": 167.1,
+        "ev": -0.1196
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Sam Darnold",
         "prop": "player_pass_yds",
-        "line": 222.5,
-        "proj": 217.6,
-        "ev": -0.1226
+        "line": 221.5,
+        "proj": 217.2,
+        "ev": -0.1235
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1325,15 +1341,15 @@
         "prop": "player_reception_yds",
         "line": 42.5,
         "proj": 41.7,
-        "ev": -0.1166
+        "ev": -0.1241
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "AJ Barner",
         "prop": "player_reception_yds",
         "line": 21.5,
-        "proj": 21.1,
-        "ev": -0.1235
+        "proj": 21.0,
+        "ev": -0.1241
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1341,7 +1357,7 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1215
+        "ev": -0.1142
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1349,15 +1365,15 @@
         "prop": "player_reception_yds",
         "line": 16.5,
         "proj": 16.1,
-        "ev": -0.1367
+        "ev": -0.1269
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Jaxon Smith-Njigba",
         "prop": "player_reception_yds",
         "line": 90.5,
-        "proj": 88.5,
-        "ev": -0.1209
+        "proj": 88.8,
+        "ev": -0.1196
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1365,23 +1381,23 @@
         "prop": "player_reception_yds",
         "line": 33.5,
         "proj": 32.7,
-        "ev": -0.1371
+        "ev": -0.1297
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Rashid Shaheed",
         "prop": "player_reception_yds",
-        "line": 26.5,
-        "proj": 25.8,
-        "ev": -0.1348
+        "line": 28.5,
+        "proj": 27.9,
+        "ev": -0.1172
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Cooper Kupp",
         "prop": "player_reception_yds",
         "line": 21.5,
-        "proj": 20.9,
-        "ev": -0.1427
+        "proj": 21.1,
+        "ev": -0.1213
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
@@ -1389,23 +1405,39 @@
         "prop": "player_rush_yds",
         "line": 18.5,
         "proj": 18.2,
-        "ev": -0.1153
+        "ev": -0.1192
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Jacory Croskey-Merritt",
         "prop": "player_rush_yds",
         "line": 39.5,
-        "proj": 38.7,
-        "ev": -0.1235
+        "proj": 38.5,
+        "ev": -0.1322
+    },
+    {
+        "game": "Seattle Seahawks @ Washington Commanders",
+        "name": "Jadarian Price",
+        "prop": "player_rush_yds",
+        "line": 51.5,
+        "proj": 50.5,
+        "ev": -0.1226
     },
     {
         "game": "Seattle Seahawks @ Washington Commanders",
         "name": "Marcus Mariota",
         "prop": "player_rush_yds",
-        "line": 21.5,
-        "proj": 21.0,
-        "ev": -0.1209
+        "line": 23.5,
+        "proj": 23.1,
+        "ev": -0.1153
+    },
+    {
+        "game": "Seattle Seahawks @ Washington Commanders",
+        "name": "Emanuel Wilson",
+        "prop": "player_rush_yds",
+        "line": 30.5,
+        "proj": 29.7,
+        "ev": -0.1359
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1413,7 +1445,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.3028
+        "ev": -0.3056
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1421,47 +1453,47 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.2071
+        "ev": 0.2249
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Brock Purdy",
         "prop": "player_pass_yds",
         "line": 235.5,
-        "proj": 230.7,
-        "ev": -0.1243
+        "proj": 231.3,
+        "ev": -0.113
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Jacoby Brissett",
         "prop": "player_pass_yds",
         "line": 225.5,
-        "proj": 220.2,
-        "ev": -0.1262
+        "proj": 220.8,
+        "ev": -0.123
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Michael Wilson",
         "prop": "player_reception_yds",
         "line": 44.5,
-        "proj": 43.9,
-        "ev": -0.1021
+        "proj": 43.7,
+        "ev": -0.1172
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Kendrick Bourne",
         "prop": "player_reception_yds",
-        "line": 21.5,
-        "proj": 21.1,
-        "ev": -0.1209
+        "line": 23.5,
+        "proj": 23.1,
+        "ev": -0.1166
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Trey McBride",
         "prop": "player_reception_yds",
         "line": 67.5,
-        "proj": 65.8,
-        "ev": -0.1372
+        "proj": 66.2,
+        "ev": -0.116
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1469,23 +1501,23 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1256
+        "ev": -0.1234
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Deebo Samuel",
         "prop": "player_reception_yds",
-        "line": 38.5,
-        "proj": 37.8,
-        "ev": -0.1123
+        "line": 40.5,
+        "proj": 39.6,
+        "ev": -0.1234
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Christian McCaffrey",
         "prop": "player_reception_yds",
         "line": 38.5,
-        "proj": 37.5,
-        "ev": -0.1386
+        "proj": 37.9,
+        "ev": -0.1076
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1493,31 +1525,31 @@
         "prop": "player_reception_yds",
         "line": 7.5,
         "proj": 7.3,
-        "ev": -0.123
+        "ev": -0.1397
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Marvin Harrison Jr.",
         "prop": "player_reception_yds",
         "line": 33.5,
-        "proj": 32.8,
-        "ev": -0.1185
+        "proj": 32.9,
+        "ev": -0.1177
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Mike Evans",
         "prop": "player_reception_yds",
         "line": 55.5,
-        "proj": 54.1,
-        "ev": -0.1369
+        "proj": 54.5,
+        "ev": -0.1093
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "George Kittle",
         "prop": "player_reception_yds",
         "line": 44.5,
-        "proj": 43.8,
-        "ev": -0.1123
+        "proj": 43.6,
+        "ev": -0.1168
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1525,7 +1557,7 @@
         "prop": "player_rush_yds",
         "line": 55.5,
         "proj": 54.2,
-        "ev": -0.1286
+        "ev": -0.1284
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1533,15 +1565,15 @@
         "prop": "player_rush_yds",
         "line": 7.5,
         "proj": 7.3,
-        "ev": -0.1341
+        "ev": -0.1314
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Jeremiyah Love",
         "prop": "player_rush_yds",
         "line": 37.5,
-        "proj": 36.7,
-        "ev": -0.1264
+        "proj": 36.9,
+        "ev": -0.1157
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
@@ -1549,31 +1581,23 @@
         "prop": "player_rush_yds",
         "line": 33.5,
         "proj": 32.8,
-        "ev": -0.1232
+        "ev": -0.1245
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Brock Purdy",
         "prop": "player_rush_yds",
         "line": 16.5,
-        "proj": 16.1,
-        "ev": -0.1309
+        "proj": 16.2,
+        "ev": -0.125
     },
     {
         "game": "Arizona Cardinals @ San Francisco 49ers",
         "name": "Kaelon Black",
         "prop": "player_rush_yds",
         "line": 32.5,
-        "proj": 31.7,
-        "ev": -0.1256
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Baker Mayfield",
-        "prop": "player_pass_tds",
-        "line": 1.5,
-        "proj": 1.0,
-        "ev": 0.0769
+        "proj": 31.8,
+        "ev": -0.1309
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1581,55 +1605,39 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0303
+        "ev": 0.0305
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Baker Mayfield",
+        "prop": "player_pass_tds",
+        "line": 1.5,
+        "proj": 1.0,
+        "ev": 0.0608
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Baker Mayfield",
         "prop": "player_pass_yds",
         "line": 216.5,
-        "proj": 211.3,
-        "ev": -0.1354
+        "proj": 211.5,
+        "ev": -0.1339
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Kyler Murray",
         "prop": "player_pass_yds",
         "line": 209.5,
-        "proj": 204.8,
-        "ev": -0.1286
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Jalen McMillan",
-        "prop": "player_reception_yds",
-        "line": 14.5,
-        "proj": 14.2,
-        "ev": -0.1117
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Josh Oliver",
-        "prop": "player_reception_yds",
-        "line": 11.5,
-        "proj": 11.3,
-        "ev": -0.1282
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Kenny Gainwell",
-        "prop": "player_reception_yds",
-        "line": 9.5,
-        "proj": 9.3,
-        "ev": -0.1222
+        "proj": 204.7,
+        "ev": -0.1252
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Bucky Irving",
         "prop": "player_reception_yds",
-        "line": 14.5,
-        "proj": 14.2,
-        "ev": -0.1119
+        "line": 15.5,
+        "proj": 15.2,
+        "ev": -0.122
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1637,7 +1645,7 @@
         "prop": "player_reception_yds",
         "line": 24.5,
         "proj": 24.0,
-        "ev": -0.1224
+        "ev": -0.1145
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1645,15 +1653,15 @@
         "prop": "player_reception_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1172
+        "ev": -0.1237
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "T.J. Hockenson",
         "prop": "player_reception_yds",
         "line": 30.5,
-        "proj": 29.8,
-        "ev": -0.1254
+        "proj": 29.7,
+        "ev": -0.1438
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1661,23 +1669,23 @@
         "prop": "player_reception_yds",
         "line": 48.5,
         "proj": 47.6,
-        "ev": -0.1181
+        "ev": -0.1168
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Justin Jefferson",
         "prop": "player_reception_yds",
-        "line": 69.5,
-        "proj": 68.2,
-        "ev": -0.1181
+        "line": 70.5,
+        "proj": 69.4,
+        "ev": -0.1098
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Jordan Addison",
         "prop": "player_reception_yds",
         "line": 36.5,
-        "proj": 35.6,
-        "ev": -0.1292
+        "proj": 35.7,
+        "ev": -0.1288
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1685,15 +1693,39 @@
         "prop": "player_reception_yds",
         "line": 35.5,
         "proj": 34.7,
-        "ev": -0.1228
+        "ev": -0.1284
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Jalen McMillan",
+        "prop": "player_reception_yds",
+        "line": 14.5,
+        "proj": 14.3,
+        "ev": -0.1035
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Josh Oliver",
+        "prop": "player_reception_yds",
+        "line": 11.5,
+        "proj": 11.2,
+        "ev": -0.1329
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Kenny Gainwell",
+        "prop": "player_reception_yds",
+        "line": 9.5,
+        "proj": 9.3,
+        "ev": -0.1187
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Aaron Jones",
         "prop": "player_reception_yds",
-        "line": 13.5,
-        "proj": 13.2,
-        "ev": -0.1179
+        "line": 12.5,
+        "proj": 12.2,
+        "ev": -0.1277
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
@@ -1701,47 +1733,47 @@
         "prop": "player_reception_yds",
         "line": 27.5,
         "proj": 27.0,
-        "ev": -0.1138
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Aaron Jones",
-        "prop": "player_rush_yds",
-        "line": 57.5,
-        "proj": 56.3,
-        "ev": -0.1215
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Baker Mayfield",
-        "prop": "player_rush_yds",
-        "line": 16.5,
-        "proj": 16.1,
-        "ev": -0.1243
-    },
-    {
-        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
-        "name": "Kyler Murray",
-        "prop": "player_rush_yds",
-        "line": 20.5,
-        "proj": 20.0,
-        "ev": -0.1342
+        "ev": -0.1104
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Kenny Gainwell",
         "prop": "player_rush_yds",
         "line": 18.5,
-        "proj": 18.2,
-        "ev": -0.1172
+        "proj": 18.1,
+        "ev": -0.1177
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Kyler Murray",
+        "prop": "player_rush_yds",
+        "line": 20.5,
+        "proj": 20.1,
+        "ev": -0.1132
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Aaron Jones",
+        "prop": "player_rush_yds",
+        "line": 52.5,
+        "proj": 51.2,
+        "ev": -0.125
     },
     {
         "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
         "name": "Bucky Irving",
         "prop": "player_rush_yds",
         "line": 57.5,
-        "proj": 56.2,
-        "ev": -0.1282
+        "proj": 56.0,
+        "ev": -0.1402
+    },
+    {
+        "game": "Minnesota Vikings @ Tampa Bay Buccaneers",
+        "name": "Baker Mayfield",
+        "prop": "player_rush_yds",
+        "line": 16.5,
+        "proj": 16.2,
+        "ev": -0.1241
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1749,7 +1781,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.2621
+        "ev": -0.2682
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1757,31 +1789,31 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.25
+        "ev": -0.2504
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Dak Prescott",
         "prop": "player_pass_yds",
         "line": 263.5,
-        "proj": 258.8,
-        "ev": -0.1145
+        "proj": 257.6,
+        "ev": -0.1265
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Lamar Jackson",
         "prop": "player_pass_yds",
         "line": 239.5,
-        "proj": 233.8,
-        "ev": -0.135
+        "proj": 234.8,
+        "ev": -0.119
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Jake Ferguson",
         "prop": "player_reception_yds",
         "line": 28.5,
-        "proj": 28.0,
-        "ev": -0.1175
+        "proj": 27.9,
+        "ev": -0.1243
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1789,15 +1821,15 @@
         "prop": "player_reception_yds",
         "line": 59.5,
         "proj": 58.2,
-        "ev": -0.131
+        "ev": -0.1232
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "CeeDee Lamb",
         "prop": "player_reception_yds",
         "line": 82.5,
-        "proj": 81.0,
-        "ev": -0.1134
+        "proj": 80.8,
+        "ev": -0.1286
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1805,39 +1837,39 @@
         "prop": "player_reception_yds",
         "line": 10.5,
         "proj": 10.2,
-        "ev": -0.1357
+        "ev": -0.1365
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Mark Andrews",
         "prop": "player_reception_yds",
         "line": 38.5,
-        "proj": 37.6,
-        "ev": -0.1352
+        "proj": 37.7,
+        "ev": -0.1192
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Ryan Flournoy",
         "prop": "player_reception_yds",
         "line": 27.5,
-        "proj": 26.9,
-        "ev": -0.1228
+        "proj": 27.0,
+        "ev": -0.119
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Justice Hill",
         "prop": "player_reception_yds",
         "line": 13.5,
-        "proj": 13.2,
-        "ev": -0.1333
+        "proj": 13.3,
+        "ev": -0.1188
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Javonte Williams",
         "prop": "player_reception_yds",
         "line": 16.5,
-        "proj": 16.2,
-        "ev": -0.11
+        "proj": 16.1,
+        "ev": -0.1412
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1845,15 +1877,15 @@
         "prop": "player_rush_yds",
         "line": 7.5,
         "proj": 7.3,
-        "ev": -0.1245
+        "ev": -0.1295
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Derrick Henry",
         "prop": "player_rush_yds",
         "line": 89.5,
-        "proj": 87.8,
-        "ev": -0.1202
+        "proj": 87.5,
+        "ev": -0.1254
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1861,23 +1893,23 @@
         "prop": "player_rush_yds",
         "line": 58.5,
         "proj": 57.3,
-        "ev": -0.129
+        "ev": -0.1218
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Justice Hill",
         "prop": "player_rush_yds",
         "line": 14.5,
-        "proj": 14.2,
-        "ev": -0.1282
+        "proj": 14.1,
+        "ev": -0.1378
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
         "name": "Lamar Jackson",
         "prop": "player_rush_yds",
         "line": 38.5,
-        "proj": 38.0,
-        "ev": -0.1038
+        "proj": 37.6,
+        "ev": -0.1333
     },
     {
         "game": "Baltimore Ravens @ Dallas Cowboys",
@@ -1885,7 +1917,7 @@
         "prop": "player_rush_yds",
         "line": 12.5,
         "proj": 12.2,
-        "ev": -0.1245
+        "ev": -0.1357
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -1893,7 +1925,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.0792
+        "ev": -0.0779
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -1901,31 +1933,31 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.132
+        "ev": 0.1085
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Tyler Shough",
         "prop": "player_pass_yds",
         "line": 252.5,
-        "proj": 246.8,
-        "ev": -0.1275
+        "proj": 247.8,
+        "ev": -0.1222
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Kirk Cousins",
         "prop": "player_pass_yds",
         "line": 211.5,
-        "proj": 206.6,
-        "ev": -0.1318
+        "proj": 206.8,
+        "ev": -0.1235
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Ashton Jeanty",
         "prop": "player_reception_yds",
         "line": 21.5,
-        "proj": 21.1,
-        "ev": -0.1119
+        "proj": 20.9,
+        "ev": -0.1432
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -1933,39 +1965,39 @@
         "prop": "player_reception_yds",
         "line": 46.5,
         "proj": 45.4,
-        "ev": -0.1359
+        "ev": -0.1295
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Chris Olave",
         "prop": "player_reception_yds",
         "line": 76.5,
-        "proj": 75.0,
-        "ev": -0.1234
+        "proj": 75.3,
+        "ev": -0.1102
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Jalen Nailor",
         "prop": "player_reception_yds",
         "line": 24.5,
-        "proj": 24.0,
-        "ev": -0.1286
+        "proj": 24.1,
+        "ev": -0.1142
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Devaughn Vele",
         "prop": "player_reception_yds",
         "line": 48.5,
-        "proj": 47.6,
-        "ev": -0.1194
+        "proj": 47.3,
+        "ev": -0.1337
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Juwan Johnson",
         "prop": "player_reception_yds",
         "line": 35.5,
-        "proj": 34.9,
-        "ev": -0.1158
+        "proj": 34.6,
+        "ev": -0.1453
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -1973,15 +2005,15 @@
         "prop": "player_reception_yds",
         "line": 43.5,
         "proj": 42.6,
-        "ev": -0.1207
+        "ev": -0.1205
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Alvin Kamara",
         "prop": "player_reception_yds",
         "line": 14.5,
-        "proj": 14.2,
-        "ev": -0.1322
+        "proj": 14.3,
+        "ev": -0.1044
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -1989,31 +2021,31 @@
         "prop": "player_reception_yds",
         "line": 8.5,
         "proj": 8.3,
-        "ev": -0.1183
+        "ev": -0.1243
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Ashton Jeanty",
         "prop": "player_rush_yds",
         "line": 68.5,
-        "proj": 66.9,
-        "ev": -0.1307
+        "proj": 67.1,
+        "ev": -0.1243
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Alvin Kamara",
         "prop": "player_rush_yds",
-        "line": 29.5,
-        "proj": 29.0,
-        "ev": -0.1153
+        "line": 27.5,
+        "proj": 26.7,
+        "ev": -0.1421
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
         "name": "Travis Etienne Jr.",
         "prop": "player_rush_yds",
-        "line": 37.5,
-        "proj": 36.6,
-        "ev": -0.1292
+        "line": 38.5,
+        "proj": 37.8,
+        "ev": -0.1205
     },
     {
         "game": "Las Vegas Raiders @ New Orleans Saints",
@@ -2021,7 +2053,7 @@
         "prop": "player_rush_yds",
         "line": 14.5,
         "proj": 14.2,
-        "ev": -0.1284
+        "ev": -0.1166
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2029,7 +2061,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.0133
+        "ev": -0.0293
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2037,7 +2069,7 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": -0.1381
+        "ev": -0.1512
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2045,55 +2077,55 @@
         "prop": "player_pass_yds",
         "line": 211.5,
         "proj": 206.4,
-        "ev": -0.1346
+        "ev": -0.1357
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Matthew Stafford",
         "prop": "player_pass_yds",
         "line": 243.5,
-        "proj": 237.4,
-        "ev": -0.1393
+        "proj": 238.3,
+        "ev": -0.1215
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Jaylen Waddle",
         "prop": "player_reception_yds",
         "line": 57.5,
-        "proj": 56.5,
-        "ev": -0.1157
+        "proj": 56.4,
+        "ev": -0.1151
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Courtland Sutton",
         "prop": "player_reception_yds",
         "line": 36.5,
-        "proj": 35.7,
-        "ev": -0.1307
+        "proj": 35.9,
+        "ev": -0.1102
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Terrance Ferguson",
         "prop": "player_reception_yds",
-        "line": 49.5,
-        "proj": 48.5,
-        "ev": -0.1329
+        "line": 50.5,
+        "proj": 49.4,
+        "ev": -0.1286
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Evan Engram",
         "prop": "player_reception_yds",
-        "line": 21.5,
-        "proj": 21.1,
-        "ev": -0.128
+        "line": 20.5,
+        "proj": 19.9,
+        "ev": -0.1468
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Davante Adams",
         "prop": "player_reception_yds",
         "line": 75.5,
-        "proj": 73.4,
-        "ev": -0.1374
+        "proj": 74.0,
+        "ev": -0.1303
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2101,15 +2133,15 @@
         "prop": "player_reception_yds",
         "line": 24.5,
         "proj": 24.0,
-        "ev": -0.131
+        "ev": -0.1224
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Kyren Williams",
         "prop": "player_reception_yds",
         "line": 12.5,
-        "proj": 12.2,
-        "ev": -0.123
+        "proj": 12.3,
+        "ev": -0.1198
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2117,7 +2149,7 @@
         "prop": "player_rush_yds",
         "line": 0.5,
         "proj": 0.1,
-        "ev": -0.4763
+        "ev": -0.4671
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2125,15 +2157,15 @@
         "prop": "player_rush_yds",
         "line": 19.5,
         "proj": 19.1,
-        "ev": -0.1185
+        "ev": -0.1305
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Blake Corum",
         "prop": "player_rush_yds",
         "line": 46.5,
-        "proj": 45.3,
-        "ev": -0.1429
+        "proj": 45.6,
+        "ev": -0.1202
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
@@ -2141,23 +2173,23 @@
         "prop": "player_rush_yds",
         "line": 50.5,
         "proj": 49.3,
-        "ev": -0.1264
+        "ev": -0.1342
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Bo Nix",
         "prop": "player_rush_yds",
         "line": 16.5,
-        "proj": 16.2,
-        "ev": -0.1181
+        "proj": 16.1,
+        "ev": -0.1342
     },
     {
         "game": "Los Angeles Rams @ Denver Broncos",
         "name": "Kyren Williams",
         "prop": "player_rush_yds",
         "line": 54.5,
-        "proj": 53.3,
-        "ev": -0.1252
+        "proj": 53.8,
+        "ev": -0.0991
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
@@ -2165,71 +2197,39 @@
         "prop": "player_pass_tds",
         "line": 1.5,
         "proj": 1.0,
-        "ev": 0.0322
+        "ev": 0.0088
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "Jalen Hurts",
         "prop": "player_pass_yds",
         "line": 218.5,
-        "proj": 214.1,
-        "ev": -0.1164
+        "proj": 212.6,
+        "ev": -0.1455
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "DeVonta Smith",
         "prop": "player_reception_yds",
         "line": 72.5,
-        "proj": 70.6,
-        "ev": -0.1365
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Saquon Barkley",
-        "prop": "player_reception_yds",
-        "line": 13.5,
-        "proj": 13.2,
-        "ev": -0.1305
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Rome Odunze",
-        "prop": "player_reception_yds",
-        "line": 25.5,
-        "proj": 24.8,
-        "ev": -0.1371
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Makai Lemon",
-        "prop": "player_reception_yds",
-        "line": 26.5,
-        "proj": 26.1,
-        "ev": -0.1102
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Colston Loveland",
-        "prop": "player_reception_yds",
-        "line": 31.5,
-        "proj": 31.0,
-        "ev": -0.1014
+        "proj": 71.2,
+        "ev": -0.1166
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "Kalif Raymond",
         "prop": "player_reception_yds",
         "line": 24.5,
-        "proj": 24.1,
-        "ev": -0.114
+        "proj": 24.0,
+        "ev": -0.1243
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "Luther Burden III",
         "prop": "player_reception_yds",
         "line": 32.5,
-        "proj": 31.8,
-        "ev": -0.114
+        "proj": 31.7,
+        "ev": -0.1324
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
@@ -2237,23 +2237,71 @@
         "prop": "player_reception_yds",
         "line": 10.5,
         "proj": 10.3,
-        "ev": -0.1061
+        "ev": -0.1023
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "Dontayvion Wicks",
         "prop": "player_reception_yds",
         "line": 42.5,
-        "proj": 41.5,
-        "ev": -0.128
+        "proj": 41.7,
+        "ev": -0.108
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Saquon Barkley",
+        "prop": "player_reception_yds",
+        "line": 13.5,
+        "proj": 13.2,
+        "ev": -0.122
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Rome Odunze",
+        "prop": "player_reception_yds",
+        "line": 25.5,
+        "proj": 25.1,
+        "ev": -0.1087
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Makai Lemon",
+        "prop": "player_reception_yds",
+        "line": 26.5,
+        "proj": 25.9,
+        "ev": -0.1235
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Colston Loveland",
+        "prop": "player_reception_yds",
+        "line": 31.5,
+        "proj": 30.7,
+        "ev": -0.1374
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Saquon Barkley",
+        "prop": "player_rush_yds",
+        "line": 71.5,
+        "proj": 69.5,
+        "ev": -0.1397
+    },
+    {
+        "game": "Philadelphia Eagles @ Chicago Bears",
+        "name": "Kyle Monangai",
+        "prop": "player_rush_yds",
+        "line": 40.5,
+        "proj": 39.5,
+        "ev": -0.1348
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
         "name": "D'Andre Swift",
         "prop": "player_rush_yds",
-        "line": 60.5,
-        "proj": 59.1,
-        "ev": -0.1299
+        "line": 58.5,
+        "proj": 57.3,
+        "ev": -0.1256
     },
     {
         "game": "Philadelphia Eagles @ Chicago Bears",
@@ -2261,22 +2309,6 @@
         "prop": "player_rush_yds",
         "line": 24.5,
         "proj": 24.0,
-        "ev": -0.1269
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Saquon Barkley",
-        "prop": "player_rush_yds",
-        "line": 71.5,
-        "proj": 70.1,
-        "ev": -0.1207
-    },
-    {
-        "game": "Philadelphia Eagles @ Chicago Bears",
-        "name": "Kyle Monangai",
-        "prop": "player_rush_yds",
-        "line": 40.5,
-        "proj": 39.7,
-        "ev": -0.1247
+        "ev": -0.1273
     }
 ]
